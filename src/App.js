@@ -2,15 +2,19 @@ import Navbar from './components/Navbar/Navbar.jsx';
 import Home from './components/Homepage/Home.jsx';
 import About from './components/About/About.jsx';
 import Contact from './components/contact/contact.jsx';
-import './app.css';
+import Service  from './components/Services/Service.jsx';
+import MyWork from './components/Work/Mywork.jsx';
+
 
 function App() {
   return (
     <>
      <Navbar />
      <Home />
-     {/* <About />
-     <Contact/> */}
+     <About />
+     <Service/>
+     <MyWork/>
+     <Contact/>
     </>
   );
 }

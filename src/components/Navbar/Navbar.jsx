@@ -1,6 +1,6 @@
 import React from 'react';
 import './navbar.css';
-import { ImGift, ImMenu } from "react-icons/im";
+import {ImMenu } from "react-icons/im";
 import { useRef,useState } from 'react';
 import { ImCross } from "react-icons/im";
 import UnderLine from '../../Assets/nav_underline.svg';
@@ -30,7 +30,7 @@ const Navbar = () => {
             <li><AnchorLink className='anchor-link'  href='#home'><p onClick={()=>{setUnderline('home')}}>Home</p>{underline==='home'?<img src={UnderLine} alt='underline-img'/>:<></>}</AnchorLink></li>
             <li><AnchorLink className='anchor-link' offset={50} href='#services'><p onClick={()=>{setUnderline('services')}}>Services</p>{underline==='services'?<img src={UnderLine} alt=''/>:<></>}</AnchorLink></li>
             <li><AnchorLink className='anchor-link' offset={50} href='#about'><p onClick={()=>{setUnderline('about')}}>About me</p>{underline==='about'?<img src={UnderLine} alt=''/>:<></>}</AnchorLink></li>
-            <li><AnchorLink className='anchor-link' offset={50} href='#work'><p onClick={()=>{setUnderline('work')}}>Portfolio</p>{underline==='work'?<img src={UnderLine} alt=''/>:<></>}</AnchorLink></li>
+            <li><AnchorLink className='anchor-link' offset={50} href='#work'><p onClick={()=>{setUnderline('work')}}>My Work</p>{underline==='work'?<img src={UnderLine} alt=''/>:<></>}</AnchorLink></li>
             <li><AnchorLink className='anchor-link' offset={50} href='#contact'><p onClick={()=>{setUnderline('contact')}}>Contact</p>{underline==='contact'?<img src={UnderLine} alt=''/>:<></>}</AnchorLink></li>
         </ul>
       <div className="connect">Connect With me </div>
